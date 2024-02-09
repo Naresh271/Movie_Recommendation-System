@@ -1,0 +1,66 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('/static/indexbackground.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            margin-left: 50px; /* Adjust the left margin as needed */
+            text-align: left;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        label {
+            font-size: 24px;
+        }
+        input[type="text"] {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        input[type="submit"] {
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Movie Recommendation System</h1>
+        <form action="/recommend" method="post">
+            <label for="movie_name">Enter Your Favorite Movie Name:</label><br>
+            <input type="text" id="movie_name" name="movie_name"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
